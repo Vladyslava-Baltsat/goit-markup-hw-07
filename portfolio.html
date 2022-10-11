@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,32 +16,38 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a lang="en" class="logo" href="./index.html"> <span class="logo-accent">Web</span>Studio</a>
+    <header class="header">
+        <div class="header-container">
+            <div class="container">
+                <nav class="header-nav">
+                    <a lang="en" class="logo" href="./index.html"> <span class="logo-accent">Web</span>Studio</a>
     
-            <ul class="list">
-                <li>
-                    <a class="link" href="./index.html"><span class="logo-accent">Студія</span></a>
-                </li>
-                <li>
-                    <a class="link" href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Контакти</a>
-                </li>
+                    <ul class="list header-menu">
+                        <li>
+                            <a class="link" href="./index.html"><span class="logo-accent">Студія</span></a>
+                        </li>
+                        <li>
+                            <a class="link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <ul class="contacts">
+                <li><a class="info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    
+                <li><a class="info" href="tell:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-    
-        <ul class="contacts">
-            <li><a class="info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    
-            <li><a class="info" href="tell:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
 
     <main>
-<section>
+<section class="section">
+    <div class="container">
+        <div class="flex-buttons">
 <ul class="other-sections">
     <li><button class="main-button"type="button">Усі</button></li>
     <li><button class="buttons" type="button">Веб-сайти</button></li>
@@ -48,9 +55,10 @@
     <li><button class="buttons" type="button">Дизайн</button></li>
     <li><button class="buttons" type="button">Маркетинг</button></li>
 </ul>
-
+</div>
+<div class="cards-container">
 <ul class="other-sections">
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image8.jpg"
         alt="Зображення ноутбука Macbook Pro з відкритим веб-сайтом під назвою Our people make the difference" width="370">
@@ -58,7 +66,7 @@
     <p class="sub-title">Веб-сайт</p>
     </a>
 </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image9.jpg"
             alt="Зображення представників команд-суперників з баскетболу" width="370">
@@ -66,7 +74,7 @@
         <p class="sub-title">Дизайн</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image10.jpg"
             alt="Зображення логотипу додатку рибного ресторану" width="370">
@@ -74,7 +82,7 @@
         <p class="sub-title">Додаток</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image11.jpg"
             alt="Зображення навушників" width="370">
@@ -82,7 +90,7 @@
         <p class="sub-title">Маркетинг</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image12.jpg"
             alt="Зображення двох коробок" width="370">
@@ -90,7 +98,7 @@
         <p class="sub-title">Додаток</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image13.jpg"
             alt="Зображення монітору від Apple з відкритим сайтом під назвою Inspiration has no Borders" width="370">
@@ -98,7 +106,7 @@
         <p class="sub-title">Веб-сайт</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image14.jpg"
             alt="Зображення відкритого розвороту журналу зі сторінками під назвою I am limited edition" width="370">
@@ -106,7 +114,7 @@
         <p class="sub-title">Дизайн</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image15.jpg"
             alt="Зображення бірки Label tag" width="370">
@@ -114,7 +122,7 @@
         <p class="sub-title">Маркетинг</p>
         </a>
     </li>
-    <li>
+    <li class="cards">
         <a class="projects" href="#">
         <img src="./images/image16.jpg"
             alt="Зображення відкритого ноутбука зі сторінкою під назвою Growing Business" width="370">
@@ -123,27 +131,33 @@
         </a>
     </li>
 </ul>
-
+</div>
+</div>
 </section>
     </main>
 
 
 
 <footer class="main-section">
-    <a lang="en" class="logo" href="./index.html"> <span class="logo-accent">Web</span><span class="logo-tag">Studio</span></a>
+    <div class="container">
+        <div class="footer-container">
+            <a lang="en" class="logo" href="./index.html"> <span class="logo-accent">Web</span><span
+                    class="logo-tag">Studio</span></a>
 
-    <adress>
-        <ul class="contacts">
-            <li><a class="location" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                    rel="noopener noreferrer nofollow"> м.Київ, пр-т Лесі
-                    Українки, 26</a>
-            </li>
-            <li><a class="info-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <adress>
 
-            <li><a class="info-bottom" href="tell:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+                <ul class="contacts adress-bottom">
+                    <li><a class="location" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                            rel="noopener noreferrer nofollow"> м.Київ, пр-т Лесі
+                            Українки, 26</a>
+                    </li>
+                    <li><a class="info-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 
-    </adress>
+                    <li><a class="info-bottom" href="tell:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </adress>
+        </div>
+    </div>
 </footer>
 
 
