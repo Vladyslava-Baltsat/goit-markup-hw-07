@@ -71,6 +71,7 @@ line-height: 1.71;
 letter-spacing: 00.03em;
 color: rgba(225, 255, 225, 0.6);
 text-decoration: none;
+margin-bottom: 9px;
 }
 
 .info-bottom:hover,
@@ -90,15 +91,15 @@ box-sizing: border-box;
 
 .header{
     padding: 0 0;
+    border-bottom: 1px solid #ececec;
 }
 .header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ececec;
     align-items: center;
-    width: 1600px;
+    width: 1200px;
     height: 80px;
-    
+    margin: 0 auto;
 }
 
 .header-nav{
@@ -117,7 +118,7 @@ box-sizing: border-box;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 14px;
 }
 
 .contacts{
@@ -143,6 +144,7 @@ box-sizing: border-box;
 
 .main-section{
     background: var(--color-background);
+    padding: 200px 452px 280px;
     
 }
 
@@ -153,7 +155,7 @@ box-sizing: border-box;
 text-transform: uppercase;
 font-weight: 900;
 line-height: 1.36;
-margin: 200px 452px 280px;
+
 max-width: 696px;
 text-align: center;
 }
@@ -200,7 +202,7 @@ list-style-type: none;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 30px;
+gap: 8px;
 }
 
 .advantages {
@@ -220,14 +222,20 @@ letter-spacing: 0.03em;
 
 
 .third-section{
-    margin: 94px 617px 50px;
     font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.activity{
+    padding-top: 0;
 }
 
 .fourth-section {
 background-color: #f5f4fa;
-margin: 94px 668px 50px;
 font-size: 36px;
+text-align: center;
+margin-bottom: 50px;
 }
 .section-for-members{
     background-color:#f5f4fa;
@@ -241,7 +249,12 @@ font-size: 36px;
     font-size: 16px;
     line-height: 1.1875;
     font-weight: 500;
-    margin: 30px 70px 10px;
+    text-align: center;
+}
+
+.team{
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .representatives{
@@ -256,8 +269,13 @@ font-size: 36px;
     letter-spacing: 00.03em;
     font-weight: 400;
     margin: auto 30px;
+    text-align: center;
 }
 
+.tagline{
+    padding-top: 60px;
+    padding-bottom: 6opx;
+}
 .footer-container{
     width: 1600px;
     height: 252px;
@@ -273,6 +291,8 @@ font-size: 36px;
 .location {
 color: var(--color-title);
 text-decoration: none;
+margin-top: 20px;
+margin-bottom: 9px;
 }
 
 .logo-tag {
@@ -346,11 +366,23 @@ background-color: #188ce8;
     display: block;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100%-30px)/3);
+    flex-basis: calc((100% - 30px)/3);
     align-content: center;
     flex-shrink: 0;
 }
 
 .cards{
-    flex-basis: calc((100%-60px)/3);
+    flex-basis: calc((100% - 60px)/3);
+}
+
+.cards-menu{
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.general{
+    border: 1px solid #eeeeee ;
+    padding: 20px 24px;
+    margin-top: 0;
 }
