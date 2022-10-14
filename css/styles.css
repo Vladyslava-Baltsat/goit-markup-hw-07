@@ -72,6 +72,7 @@ letter-spacing: 00.03em;
 color: rgba(225, 255, 225, 0.6);
 text-decoration: none;
 margin-bottom: 9px;
+margin-top: 9px;
 }
 
 .info-bottom:hover,
@@ -144,7 +145,7 @@ box-sizing: border-box;
 
 .main-section{
     background: var(--color-background);
-    padding: 200px 452px 280px;
+    padding: 200px 0px 200px;
     
 }
 
@@ -190,19 +191,25 @@ text-align: center;
     display: flex;
     gap: 30px;
     justify-content: center;
-    align-items: center;
+    list-style-type: none;
 }
 
 .advantages-items{
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px)/4);
 }
 
 .other-sections {
 list-style-type: none;
 display: flex;
-align-items: center;
 justify-content: center;
-gap: 8px;
+gap: 30px;
+}
+
+.our-activities {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style-type: none;
 }
 
 .advantages {
@@ -237,12 +244,17 @@ font-size: 36px;
 text-align: center;
 margin-bottom: 50px;
 }
+
 .section-for-members{
     background-color:#f5f4fa;
 }
 
 .our-team{
     max-width: 1170px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style-type: none;
 }
 .members {
     letter-spacing: 0.03em;
@@ -250,6 +262,7 @@ margin-bottom: 50px;
     line-height: 1.1875;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .team{
@@ -272,15 +285,17 @@ margin-bottom: 50px;
     text-align: center;
 }
 
-.tagline{
-    padding-top: 60px;
-    padding-bottom: 6opx;
+.tail{
+    
+    background: var(--color-background);
 }
+
 .footer-container{
     width: 1600px;
-    height: 252px;
     display: block;
     flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 6opx;
 }
 
 .adress-bottom{
@@ -346,6 +361,14 @@ background-color: #188ce8;
     letter-spacing: 0.06em;
 }
 
+.cards-names {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
 .sub-title{
     font-size: 16px;
     font-weight: 400;
@@ -358,7 +381,7 @@ background-color: #188ce8;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .cards-container{
@@ -367,7 +390,6 @@ background-color: #188ce8;
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc((100% - 30px)/3);
-    align-content: center;
     flex-shrink: 0;
 }
 
@@ -379,6 +401,8 @@ background-color: #188ce8;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
+    list-style-type: none;
+     display: flex;   
 }
 
 .general{
