@@ -14,7 +14,19 @@ line-height: 1.14;
 --primary-text-color:#757575;
 --color-accent:#2196f3;
 --color-background: #2f303a;
+}
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -71,8 +83,6 @@ line-height: 1.71;
 letter-spacing: 00.03em;
 color: rgba(225, 255, 225, 0.6);
 text-decoration: none;
-margin-bottom: 9px;
-margin-top: 9px;
 }
 
 .info-bottom:hover,
@@ -85,10 +95,7 @@ margin-top: 9px;
 box-sizing: border-box;
 }
 
-.h1,h2,h3,h4,h5,h6,p,ul{
-    padding: 0;
-    margin: 0;
-}
+
 
 .header{
     padding: 0 0;
@@ -156,7 +163,6 @@ box-sizing: border-box;
 text-transform: uppercase;
 font-weight: 900;
 line-height: 1.36;
-
 max-width: 696px;
 text-align: center;
 }
@@ -202,7 +208,7 @@ text-align: center;
 list-style-type: none;
 display: flex;
 justify-content: center;
-gap: 30px;
+gap: 8px;
 }
 
 .our-activities {
@@ -286,7 +292,8 @@ margin-bottom: 50px;
 }
 
 .tail{
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--color-background);
 }
 
@@ -294,8 +301,7 @@ margin-bottom: 50px;
     width: 1600px;
     display: block;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 6opx;
+    
 }
 
 .adress-bottom{
@@ -306,9 +312,19 @@ margin-bottom: 50px;
 .location {
 color: var(--color-title);
 text-decoration: none;
-margin-top: 20px;
-margin-bottom: 9px;
 }
+
+.location-tail{
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.mail-tail,
+.telephone-tail{
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
 
 .logo-tag {
     color: var(--color-title);
@@ -403,6 +419,10 @@ background-color: #188ce8;
     margin-top: 50px;
     list-style-type: none;
      display: flex;   
+}
+
+.cards-images{
+    display: block;
 }
 
 .general{
