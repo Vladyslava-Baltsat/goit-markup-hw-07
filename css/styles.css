@@ -362,8 +362,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     align-items: center;
     fill: #afb1ba;
     margin-top: 16px;
-    margin-right: 32px;
-    margin-left: 32px;
     gap: 10px;
 }
 
@@ -386,11 +384,41 @@ justify-content: center;
 
 .icons:hover{
 background-color: var(--color-accent);
-    fill: var(--color-title);
 }
 
 .icons:focus {
     background-color: var(--color-accent);
+}
+
+.icons:hover .icon-instagram {
+    fill: var(--color-title);
+}
+
+.icons:focus .icon-instagram{
+    fill: var(--color-title);
+}
+
+.icons:hover .icon-twitter {
+    fill: var(--color-title);
+}
+
+.icons:focus .icon-twitter {
+    fill: var(--color-title);
+}
+
+.icons:hover .icon-facebook {
+    fill: var(--color-title);
+}
+
+.icons:focus .icon-facebook {
+    fill: var(--color-title);
+}
+
+.icons:hover .icon-linkedin {
+    fill: var(--color-title);
+}
+
+.icons:focus .icon-linkedin {
     fill: var(--color-title);
 }
 
@@ -449,7 +477,7 @@ text-decoration: none;
 
 .icons-bottom{
     fill: var(--color-title);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -592,8 +620,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .cards:hover{
-    box-shadow: (0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16));
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .cards-menu{
@@ -623,9 +651,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         line-height: 1.16;
 }
 
-.section-clients{
-    padding: 94px 215px;
-}
 
 .clients-list{
     list-style-type: none;
