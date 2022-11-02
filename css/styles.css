@@ -1101,7 +1101,7 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
 
 .checkbox-input{
     display: flex;
-    appearance: none;
+    
     width: 16px;
     height: 15px;
     align-items: center;
