@@ -83,9 +83,13 @@ ul {
 }
 
 .telephone-img {
+    
     width: 10px;
     height: 16px;
     background-color: var(--color-title);
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-item{
@@ -547,6 +551,7 @@ text-decoration: none;
 .location-tail{
     margin-top: 20px;
     margin-bottom: 9px;
+    white-space: nowrap;
 }
 
 .mail-tail,
@@ -590,7 +595,7 @@ text-decoration: none;
 }
 
 .join{
-   
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -607,10 +612,12 @@ text-decoration: none;
 }
 
 .form-for-footer{
+    margin-left: 93px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  
 }
 
 .footer-title {
@@ -651,12 +658,12 @@ text-decoration: none;
 
 .footer-input:hover {
     border-color: var(--color-accent);
-    color: var(--main-text-color);
+    color: var(--color-title);
 }
 
 .footer-input:focus {
     border-color: var(--color-accent);
-    color: var(--main-text-color);
+    color: var(--color-title);
 } 
 
 
@@ -981,10 +988,20 @@ pointer-events: none;
         cursor: pointer;
 }
 
+.icon-close-button{
+    fill: #000;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.close-button:hover .icon-close-button {
+    fill: var(--color-accent);
+}
+
 .close-button:focus .icon-close-button{
     fill: var(--color-accent);
-
 }
+
+
 
 /*Form*/
 .form-container{
@@ -1033,6 +1050,7 @@ pointer-events: none;
 .form-input:focus {
  border: 1px solid var(--color-accent);
 }
+
 
 
 .form-icon {
@@ -1140,6 +1158,10 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
     margin-left: 8.38px;
 }
 
+.link-conditions{
+    color: var(--color-accent);
+}
+
 .icon-check{
     opacity: 0;
     fill: var(--color-title);
@@ -1151,7 +1173,7 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
  background-color: var(--color-accent);
 }
 
-.checkbox-input:checked + .icon-check {
+.checkbox-input:checked + .checkbox-border .icon-check {
     opacity: 1;
     fill: var(--color-title);
     z-index: 1;
