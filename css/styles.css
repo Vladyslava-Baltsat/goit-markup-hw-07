@@ -244,7 +244,7 @@ border-radius: 2px;
 .main-section{
     background-image:linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/img-background.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--color-background);
@@ -612,7 +612,7 @@ text-decoration: none;
 }
 
 .form-for-footer{
-    margin-left: 93px;
+    
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -703,7 +703,8 @@ text-decoration: none;
 
 .container-tail{
     display: flex;
-    gap: 70px;
+    margin-left: 70px;
+    margin-right: 93px;
 }
 
 
