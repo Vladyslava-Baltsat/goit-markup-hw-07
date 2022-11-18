@@ -1,0 +1,85 @@
+.contacts__mail-img {
+    width: 16px;
+    height: 12px;
+    background-color: var(--color-title);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.mail-img {
+    fill: var(--primary-text-color);
+}
+
+.contacts__link:hover .mail-img {
+    fill: var(--color-accent);
+}
+
+.contacts__link:focus .mail-img {
+    fill: var(--color-accent);
+}
+
+.telephone-img {
+    width: 10px;
+    height: 16px;
+    background-color: var(--color-title);
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+&__item {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+&__link {
+    list-style-type: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
+    text-decoration: none;
+    color: var(--primary-text-color);
+        transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
+        color: inherit;
+        transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
+
+        &:hover {
+                color: var(--color-accent);
+
+                &.contacts__telephone-img {
+                        fill: var(--color-accent);
+                    }
+            }
+        
+            &:focus {
+                color: var(--color-accent);
+
+            &.contacts__telephone-img {
+            fill: var(--color-accent);
+}
+}
+    }
+}
+
+.contacts__telephone-img {
+    fill: var(--primary-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+

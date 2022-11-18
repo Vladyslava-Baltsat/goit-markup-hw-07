@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/main.min.css" />
    
 </head>
 
@@ -19,8 +21,7 @@
     <header class="header">
         <div class="container header__container">
             <nav class="header__nav">
-                <a lang="en" class="header__logo" href="./index.html"> <span
-                        class="header__logo--accent">Web</span>Studio</a>
+                <a lang="en" class="logo" href="./index.html"> Web<span class="logo--black-piece">Studio</span></a>
     
                 <ul class="menu">
                     <li class="menu__item">
@@ -59,22 +60,23 @@
     </header>
 
     <main>
-<section class="portfolio">
+<section class="section portfolio">
+    <h1 class="section__title visually-hidden">Наші проєкти</h1>
     <div class="portfolio__container">
         <div class="portfolio__buttons">
-<ul class="buttons__list">
-    <li><button class="main-button"type="button">Усі</button></li>
-    <li><button class="buttons" type="button">Веб-сайти</button></li>
-    <li><button class="buttons" type="button">Додатки</button></li>
-    <li><button class="buttons" type="button">Дизайн</button></li>
-    <li><button class="buttons" type="button">Маркетинг</button></li>
+<ul class="filters">
+    <li><button class="filters__button filters__button--main" type="button">Усі</button></li>
+    <li><button class="filters__button" type="button">Веб-сайти</button></li>
+    <li><button class="filters__button" type="button">Додатки</button></li>
+    <li><button class="filters__button" type="button">Дизайн</button></li>
+    <li><button class="filters__button" type="button">Маркетинг</button></li>
 </ul>
 </div>
 <div class="cards-container">
-<ul class="cards__menu">
+<ul class="cards">
     <li class="cards__items">
             <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image8.jpg"
             alt="Зображення ноутбука Macbook Pro з відкритим веб-сайтом під назвою Our people make the difference" width="370"/>
         <p class="cards__overlay">
@@ -84,7 +86,7 @@
     </p> 
     </div>
     
-        <div class="cards">
+        <div class="cards__descr">
         <h3 class="cards__names">Технокряк</h3>
     <p class="cards__title">Веб-сайт</p>
     </div>
@@ -94,7 +96,7 @@
 </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image9.jpg"
             alt="Зображення представників команд-суперників з баскетболу" width="370">
             <p class="cards__overlay">
@@ -103,7 +105,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
             </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Постер New Orlean vs Golden Star</h3>
         <p class="cards__title">Дизайн</p>
     </div>
@@ -111,7 +113,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image10.jpg"
             alt="Зображення логотипу додатку рибного ресторану" width="370">
             <p class="cards__overlay">
@@ -120,7 +122,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
             </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Ресторан Seafood</h3>
         <p class="cards__title">Додаток</p>
     </div>
@@ -128,7 +130,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image11.jpg"
             alt="Зображення навушників" width="370">
                 <p class="cards__overlay">
@@ -137,7 +139,7 @@
                     вичерпні відомості про компанію чи приватну особу.
                 </p>
                 </div>
-            <div class="cards">
+            <div class="cards__descr">
         <h3 class="cards__names">Проєкт Prime</h3>
         <p class="cards__title">Маркетинг</p>
     </div>
@@ -145,7 +147,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image12.jpg"
             alt="Зображення двох коробок" width="370">
             <p class="cards__overlay">
@@ -154,7 +156,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
             </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Проєкт Boxes</h3>
         <p class="cards__title">Додаток</p>
     </div>
@@ -162,7 +164,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image13.jpg"
             alt="Зображення монітору від Apple з відкритим сайтом під назвою Inspiration has no Borders" width="370">
             <p class="cards__overlay">
@@ -171,7 +173,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
         </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Inspiration has no Borders</h3>
         <p class="cards__title">Веб-сайт</p>
     </div>
@@ -179,7 +181,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image14.jpg"
             alt="Зображення відкритого розвороту журналу зі сторінками під назвою I am limited edition" width="370">
             <p class="cards__overlay">
@@ -188,7 +190,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
         </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Видання Limited Edition</h3>
         <p class="cards__title">Дизайн</p>
     </div>
@@ -196,7 +198,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image15.jpg"
             alt="Зображення бірки Label tag" width="370">
         
@@ -206,7 +208,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
             </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Проєкт LAB</h3>
         <p class="cards__title">Маркетинг</p>
     </div>
@@ -214,7 +216,7 @@
     </li>
     <li class="cards__items">
         <a class="cards__link" href="#">
-            <div class="pages">
+            <div class="cards__thumb">
         <img class="cards__images" src="./images/image16.jpg"
             alt="Зображення відкритого ноутбука зі сторінкою під назвою Growing Business" width="370">
         
@@ -224,7 +226,7 @@
                 вичерпні відомості про компанію чи приватну особу.
             </p>
         </div>
-            <div class="cards">
+            <div class="cards__descr">
             <h3 class="cards__names">Growing Business</h3>
         <p class="cards__title">Додаток</p>
     </div>
@@ -241,8 +243,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="tail-container">
-            <a lang="en" class="footer__logo" href="./index.html"> <span class="footer__logo--accent">Web</span><span
-                    class="footer__logo--tag">Studio</span></a>
+            <a lang="en" class="logo" href="./index.html">Web<span class="logo--white-piece">Studio</span></a>
 
             <adress>
 

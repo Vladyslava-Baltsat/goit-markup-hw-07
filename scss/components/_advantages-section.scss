@@ -1,0 +1,52 @@
+
+
+.advantages {
+    padding: 94px 0;
+
+    &__name {
+    visibility: hidden;
+}
+    &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style-type: none;
+}
+    &__items {
+    flex-basis: calc((100% - 90px)/4);
+}
+&__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+&__description {
+    color: var(--primary-text-color);
+    line-height: 1.71;
+    font-weight: 400;
+    margin-top: 10px;
+}
+&__antenna,
+&__clock,
+&__diagram,
+&__astronaut {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+}
+
+
+
+
+
+
+

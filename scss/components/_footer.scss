@@ -1,0 +1,83 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--color-background);
+
+    &__container {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 93px;
+
+}
+
+&__icons {
+    fill: var(--color-title);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+}
+}
+
+
+.icon-instagram--footer,
+.icon-twitter--footer,
+.icon-facebook--footer,
+.icon-linkedin--footer {
+    fill: var(--color-title);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.tail-container {
+    display: block;
+    flex-direction: column;
+
+
+}
+
+.address {
+    display: block;
+    margin-top: 20px;
+
+&__location {
+    margin-top: 20px;
+    margin-bottom: 9px;
+    white-space: nowrap;
+}
+    &__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 00.03em;
+    color: rgba(225, 255, 225, 0.6);
+    text-decoration: none;
+    transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
+}
+
+}
+
+.location {
+    color: var(--color-title);
+    text-decoration: none;
+}
+
+.address__mail,
+.address__telephone {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+
+
+
+
+
