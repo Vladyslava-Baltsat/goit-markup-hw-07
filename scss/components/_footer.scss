@@ -8,6 +8,11 @@
     margin-left: 70px;
     margin-right: 93px;
 
+    &--tail{
+            display: block;
+            flex-direction: column;
+        }
+
 }
 
 &__icons {
@@ -20,24 +25,22 @@
     height: 44px;
     border-radius: 50%;
 
-}
-}
-
-
-.icon-instagram--footer,
-.icon-twitter--footer,
-.icon-facebook--footer,
-.icon-linkedin--footer {
+&--instagram,
+&--twitter,
+&--facebook,
+&--linkedin {
     fill: var(--color-title);
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.tail-container {
-    display: block;
-    flex-direction: column;
-
+}
 
 }
+
+
+
+
+
 
 .address {
     display: block;
