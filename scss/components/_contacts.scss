@@ -54,7 +54,7 @@
         &:hover {
                 color: var(--color-accent);
 
-                &.contacts__telephone-img {
+                & .contacts__telephone-img {
                         fill: var(--color-accent);
                     }
             }
@@ -62,7 +62,7 @@
             &:focus {
                 color: var(--color-accent);
 
-            &.contacts__telephone-img {
+            & .contacts__telephone-img {
             fill: var(--color-accent);
 }
 }

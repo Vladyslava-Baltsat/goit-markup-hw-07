@@ -3,6 +3,9 @@
 @import'./utils/fonts';
 @import'./utils/utils';
 
+
+@import './components/section';
+@import './components/social-links';
 @import './components/activity-section';
 @import './components/advantages-section';
 @import './components/button';
@@ -23,5 +26,4 @@
 @import './components/menu';
 @import './components/modal';
 @import './components/portfolio';
-@import './components/section';
-@import './components/social-links';
+

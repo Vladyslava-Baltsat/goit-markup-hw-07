@@ -36,21 +36,21 @@
     &:hover {
     background-color: var(--color-accent);
 
-    .icon-instagram,
+    & .icon-instagram,
     .icon-twitter,
     .icon-facebook,
-    .icon-linkedin & {
-fill: var(--color-title);
+    .icon-linkedin  {
+    fill: var(--color-title);
     }
 }
 
     &:focus {
     background-color: var(--color-accent);
 
-    .icon-instagram,
+   & .icon-instagram,
     .icon-twitter,
     .icon-facebook,
-    .icon-linkedin & {
+    .icon-linkedin  {
         fill: var(--color-title);
     }
 

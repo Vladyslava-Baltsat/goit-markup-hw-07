@@ -35,18 +35,19 @@
     transition: background-color var(--transition-duration) var(--transition-timing-function),
         fill-opacity var(--transition-duration) var(--transition-timing-function);
 
-    .checkbox__input:checked + &{
+     .checkbox__input:checked + & {
         border: none;
         background-color: var(--color-accent);
+        }
 
-                & + .checkbox__icon {
+                 & .checkbox__icon {
                         opacity: 1;
                         fill: var(--color-title);
                         z-index: 1;
                 
                     }
 
-    }
+    
 
     }
 

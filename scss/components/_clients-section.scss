@@ -37,17 +37,18 @@
 
         &:hover {
             border: 1px solid var(--color-accent);
+
+            & .icon-client{
+        fill: var(--color-accent);
+                }
         }
         &:focus {
         border: 1px solid var(--color-accent);
-        }
+            & .icon-client{
+               fill: var(--color-accent); 
+            }
 
-.icon-client &:hover  {
-    fill: var(--color-accent);
-}
-.icon-client &:focus  {
-    fill: var(--color-accent);
-}
+        }
 
 }
 

@@ -76,7 +76,7 @@
     transition: transform var(--transition-duration) var(--transition-timing-function);
 
 
- .cards__overlay &:hover{
+ &:hover .cards__overlay {
     transform: translateY(0);
     overflow: hidden;
     opacity: 1;
